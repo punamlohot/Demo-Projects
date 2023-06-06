@@ -1,0 +1,55 @@
+#calc {
+    width: 100%;
+    Height: 100px;
+    text-align: right;
+}
+
+#subInput {
+    width: 100%;
+    Height: 150px;
+    text-align: right;
+    background-color: white;
+}
+
+tr,
+td,
+input {
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+}
+
+/*@font-face {
+font-family:;
+src: url("");
+}*/
+.btn {
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+
+.floatinghistory h1 {
+    text-align: center;
+}
+
+.floatinghistory {
+    position: relative;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+
+}
+
+#history {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    transform: translate(50%, 50%);
+    padding: 5px;
+}

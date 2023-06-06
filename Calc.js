@@ -55,19 +55,20 @@ function sqrt()
 {
 	document.getElementById('calc').value = Math.sqrt(document.getElementById('calc').value);
 }
-// function showHistory()
-// {
-// 	let history = '<div class="his">';
-// 	history+= "<p>98-6 =</p><p>92</p>";
-// 	history+= '</div>';
-// 	document.getElementsById('history').innerHTML = history;
-// }
 
-function showHistory() {
+//------------------------------------------------------------------------------------------------------------------------
+
+function showHistory()
+{
+	let history = '<div class="his">';
+	history+= "<p>98-6 =</p><p>92</p>";
+	history+= '</div>';
+	document.getElementsById('history').innerHTML = history;
+}
+
+// function showHistory() {
  	
-  }
-//let historyButton = document.getElementById("historyButton");
-// historyButton.addEventListener("click", showHistory);
+//   }
 
 function addHistory()
 {
