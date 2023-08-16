@@ -58,26 +58,25 @@ function sqrt()
 
 //------------------------------------------------------------------------------------------------------------------------
 
-function showHistory()
-{
-	let history = '<div class="his">';
-	history+= "<p>98-6 =</p><p>92</p>";
-	history+= '</div>';
-	document.getElementsById('history').innerHTML = history;
+function addHistory() {
+    var historyHTML = '';
+
+    for (var i = 0; i < inp_Val.length; i++) {
+        historyHTML += sub_Inp[i] + inp_Val[i] + "<br>";
+    }
+
+    hisBox.innerHTML = historyHTML;
 }
 
-// function showHistory() {
- 	
-//   }
+function clearHistory() {
+			hisBox.innerHTML = "";
+		}
 
-function addHistory()
-{
-	let history = [];
-	history.push(document.getElementById('history').innerHTML += document.getElementById('subInput').value);
+function toggleHistory() {
 
-	// let historySection = document.getElementById("history");
- 	// historySection.innerHTML = "";
- 	// for (let i = 0; i < history.length; i++) {
- 	//   historySection.innerHTML += history[i] + "<br>";
- 	// }
+    if (hisDiv.style.display === 'none' || hisDiv.style.display === '') {
+        hisDiv.style.display = 'block';
+    } else {
+        hisDiv.style.display = 'none';
+    }
 }
